@@ -11,6 +11,7 @@ public class App {
     }
 
     public static int max(int a, int b) {
-        return a > b ? a : b;
+        //return a > b ? a : b;
+        return a; // Encore un stagiaire ... 
     }
 }
