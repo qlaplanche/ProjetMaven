@@ -26,4 +26,13 @@ Caused by: java.lang.ClassNotFoundException: com.opencsv.CSVReader
         at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
         at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
         ... 1 more
-    ```
+```
+
+
+## Partie 3 
+
+- ### Exercice 31 
+    - Dans le fichier produit, les nombres sont entourés de guillemets, ce qui est problématique pour un fichier csv. On peut résoudre le problème en passant false pour le param `applyQuotesToAll` qui vaut true par défault.
+```Java
+writer.writeNext(out.toArray(new String[0]), false);
+```
